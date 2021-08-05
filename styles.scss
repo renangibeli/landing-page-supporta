@@ -1,0 +1,539 @@
+@font-face {
+    font-family: 'Boton';
+    src: url('fonts/Boton Regular.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Boton', serif;
+}
+
+.header-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 6em 0.25em 6em;
+    width: 100%;
+    height: 184px;
+    background-color: #76ACA9;
+    color: #FFFFFF;
+
+    h1{
+        font-size: 5em;
+        // font-size: 500%;
+    }
+
+    i{
+        font-size: 3.125em;
+        margin-left: 0.8em;
+        transition: .5s;
+        color: #FFFFFF;
+
+        &:hover{
+            transform: scale(1.1);
+            color: #d3d3d3;
+        }
+    }
+}
+
+.header-menu{
+    display: flex;
+    width: 100%;
+    height: 74px;
+    line-height: 74px;
+    background-color: #3B5B5A;
+    padding-right: 6em;
+
+    a{
+        width: 100%;
+        text-align: center;
+        font-size: 1.125em;
+        color: #FFFFFF;
+        text-decoration: none;
+        transition: .25s;
+
+        &:hover{
+            font-size: 1.35em;
+            color: #d3d3d3;
+        }
+    }
+
+    .super-item{
+        background-color: #C4C4C4;
+        color: #3B5B5A;
+        padding: 0 4.25em;
+        float: right;
+
+            &:hover{
+                color: #448b89;
+            }
+        }
+}
+
+.banner{
+    width: 100%;
+    height: 631px;
+    background-image: url(assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    .coda-container{
+        padding-top: 28.125em;
+
+        .coda{
+            font-size: 7.5em;
+            width: 40%;
+            height: 143px;
+            background-color: #76aca9bf;
+            color: #FFFFFF;
+            text-shadow: 0px 5px 10px #000000;
+            text-align: right;
+            padding-right: 0.15em;
+
+            code{
+                font-weight: bolder;
+            }
+        }
+
+
+    }
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 1583px;
+    background: linear-gradient(180deg,#7E649F, #574479, #130D36);
+
+    .infos-p{
+        color: #FFFFFF;
+        font-size: 1.625em;
+        text-align: center;
+        padding: 3.125em 5em;
+    }
+
+
+    .know-more{
+        text-align: center;
+        transition: .5s;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+        
+        a{ 
+            background-color: #76ACA9;
+            padding: 0.6em 3.5em;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #FFFFFF;
+            border-radius: 6px;
+            font-size: 1.875em;
+            font-weight: bolder;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    .employees-container{
+        display: flex;
+        flex-direction: row;
+        padding: 0 5em;
+        margin-top: 4em;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 1.375em;
+
+        .employees-card{
+            padding: 0 1em;
+            width: 80%;
+
+            img {
+                object-fit: contain;
+                background-position: center;
+                width: 20%;
+                height: 20%;
+                position: relative;
+              }
+        }
+    
+    }
+
+    .titles{
+        margin-top: 5em;
+        text-align: center;
+        h2{
+            font-weight: 700;
+            color: #FFFFFF;
+            font-size: 3.75em;
+        }
+    }
+
+    .expected-skills{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-top: 5em;
+        color: #FFFFFF;
+
+        .skill-card{
+            display: flex;
+            flex-direction: row;
+            padding: 1.5em;
+            height: 50%;
+
+            .skill{
+                text-align: right;
+                width: 25%;
+                border-right: 2px solid #FFFFFF;
+                padding: 0.75em;
+                font-size: 2.5em;
+                font-weight: bold;
+            }
+
+            .skill-description{
+                width: 75%;
+                padding: 2em;
+                font-size: 1.375em;
+            }
+        }
+    }
+
+}
+
+.footer-division{
+    display: flex;
+    flex-direction: column;
+    height: 549px;
+    width: 100%;
+    background-color: #000000;
+    padding: 2.5em 6em 0 6em;
+    color: #FFFFFF;
+
+    .footer-p{
+        margin-top: 4em;
+        text-align: center;
+    }
+
+    .footer-container{
+        display: flex;
+        flex: row;
+    
+        .footer-map{
+            font-size: 1.375em;
+            color: #FFFFFF;
+            width: 50%;
+    
+            p{
+                margin-bottom: 1.25em;
+            }
+    
+            iframe {
+                width: 80%;
+                height: 90%;
+            }
+        }
+    
+        .footer-form{
+            color: #FFFFFF;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+    
+            p{
+                font-size: 1.375em;
+                margin-bottom: 1em;
+            }
+    
+            label, input{
+                width: 100%;
+            }
+    
+            input{
+                margin-bottom: 1.5em;
+                padding: 0.75em 0.5em;
+                border-radius: 6px;
+                background-color: #C4C4C4;
+                border: 0 none;
+                outline: 0;
+    
+            }
+    
+            .button{
+                text-align: right;
+                
+                button{
+                    border-radius: 6px;
+                    background-color: #C4C4C4;
+                    color: #17103A;
+                    text-transform: uppercase;
+                    font-weight: bolder;
+                    padding: 0.625em 2.5em;
+                    font-size: 1.25em; 
+                    border: none;
+                    transition: .5s;
+
+                    &:hover{
+                        cursor: pointer;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+           
+        }
+    }
+}
+
+@media screen and (max-width: 1072px) {
+
+    .header-info{
+    
+        h1{
+            font-size: 3.5em;
+        }
+    
+        i{
+            font-size: 2.5em;
+        }
+    }
+
+    .header-menu{
+        padding: 0 6rem;
+    
+        a{
+
+            font-size: 0.8em;
+    
+            &:hover{
+                font-size: 1em;
+            }
+        }
+    
+        .super-item{
+            background-color: #C4C4C4;
+            color: #3B5B5A;
+            padding: 0 4.25em;
+            float: right;
+    
+                &:hover{
+                    color: #448b89;
+                }
+            }
+    }
+
+    .banner{
+    
+        .coda-container{
+    
+            .coda{
+                font-size: 5.5em;
+                height: 100%;
+            }
+        }
+    }
+
+    .infos{
+            height: 100%;
+        .infos-p{
+            font-size: 1.2em;
+        }
+
+        .employees-container{
+            display: block;
+            font-size: 1.1em;
+
+            .employees-card{
+                margin: 0 auto;
+                padding: 10px 0;
+            }
+        }
+
+        .titles{
+            h2{
+                font-size: 3em;
+            }
+        }
+
+        .expected-skills{
+    
+            .skill-card{
+
+                display: block;
+    
+                .skill{
+                    font-size: 1.5em;
+                    margin: 0 auto;
+                    border-right: 0;
+                    text-align: center;
+                    border-bottom: 1px solid #FFFFFF;
+                }
+    
+                .skill-description{
+                    font-size: 1em;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+ }
+
+ @media screen and (max-width: 1024px){
+    .footer-division{
+        height: 100% ;
+    
+        .footer-p{
+
+        }
+    
+        .footer-container{
+            display: block;
+            text-align: center;
+        
+            .footer-map{
+                font-size: 1.375em;
+                margin: 0 auto;
+
+                iframe{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        
+            .footer-form{
+                display: block;
+                margin: 0 auto;
+        
+                p{
+                    margin: 1em 0;
+                }
+                
+                .button{
+                    text-align: center;
+        
+                }
+               
+            }
+        }
+    }
+ }
+
+ @media screen and (max-width: 860px){
+
+    .header-info{
+        padding: 1em;
+
+        h1{
+            font-size: 3.5em;
+        }
+    
+        i{
+            font-size: 2.5em;
+        }
+    }
+
+    .header-menu{
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    
+        a{
+            display: block;
+            width: 100%;
+            font-size: 1em;
+            text-align: left;
+            padding-left: 1em;
+            border-bottom: 1px solid lightgray;
+    
+            &:hover{
+                font-size: 1.1em;
+            }
+        }
+    
+        .super-item{
+            display: block;
+            width: 100%;
+            background-color: #C4C4C4;
+            color: #3B5B5A;
+            padding-left: 1em;
+            
+                &:hover{
+                    color: #448b89;
+                }
+            }
+    }
+
+    
+
+    .banner{
+    
+        .coda-container{
+    
+            .coda{
+                font-size: 4em;
+               
+            }
+    
+    
+        }
+    }
+
+    .footer-division{
+    
+        .footer-container{
+    
+            .footer-form{
+        
+                
+                .button{
+                    
+                    button{
+                        padding: 0.5em 0.5em;
+                        font-size: 0.8em;
+                    }
+                } 
+            }
+        }
+    }
+ }
+
+ @media screen and (max-width: 560px){
+
+    .header-info{
+        padding: 1em;
+
+        h1{
+            font-size: 2.5em;
+        }
+    
+        i{
+            font-size: 2em;
+        }
+    }
+
+    .banner{
+    
+        .coda-container{
+    
+            .coda{
+                font-size: 3em;
+               
+            }
+    
+    
+        }
+    }
+ }
+
+ 
+
+
+
+
+
